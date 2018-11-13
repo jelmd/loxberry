@@ -22,7 +22,6 @@ use LWP::UserAgent;
 use XML::Simple qw(:strict);
 use Config::Simple;
 use File::Copy;
-use File::HomeDir;
 use LoxBerry::System;
 #use strict;
 #use warnings;
@@ -86,7 +85,7 @@ $timezone            = $cfg->param("TIMESERVER.ZONE");
 $ntpbin              = $cfg->param("BINARIES.NTPDATE");
 $datebin             = $cfg->param("BINARIES.DATE");
 $sudobin             = $cfg->param("BINARIES.SUDO");
-$installdir          = $cfg->param("BASE.INSTALLFOLDER");
+$installdir          = $lbhomedir;
 
 ##########################################################################
 # Main program

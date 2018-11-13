@@ -9,3 +9,5 @@ log/plugins/**
 templates/plugins/**
 webfrontend/htmlauth/plugins/**
 webfrontend/html/plugins/**
+
+*.patch
