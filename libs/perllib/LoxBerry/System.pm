@@ -4,7 +4,6 @@
 use strict;
 use Config::Simple;
 use URI::Escape;
-use Cwd 'abs_path';
 use Carp;
 use Sys::Hostname;
 
@@ -142,6 +141,7 @@ sub canonical_path {
 }
 
 sub get_plugindir {
+	use Cwd;
 	use Cwd 'abs_path';
 	my $use_abs = shift;
 	my @p = ();
